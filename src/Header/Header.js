@@ -13,7 +13,7 @@ const Header = () => {
 
         </div>
         <div className='headerNavbar'>
-            <ol>
+            <ol className='headerNavList'>
                 <li>Home</li>
                 <li>About Us</li>
                 <li>Shop</li>
@@ -24,12 +24,12 @@ const Header = () => {
             <img src='/image/headerIcon.png' alt='headerIcon' />
         </div>
         <div className='headerGandaMarts'>
-            <p>Sell on Ganda Marts</p>
-            <p>?</p>
+            <p id='headerGandaText'>Sell on Ganda Marts</p>
+            <p id='headerGandaSign'>?</p>
 
         </div>
         <div className='headerHelpCart'>
-            <p>Help <img src='/image/vudown.png' alt='down' /></p>
+            <p>Help <img id='vudown' src='/image/vudown.png' alt='down' /></p>
             <img src='/image/headerCart.png' alt='headerCart' />
 
 

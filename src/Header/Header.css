@@ -1,10 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 header{
     width: 100%;
     position: fixed;
     z-index: 1;
+    padding: 8px 0;
+    background-color: rgb(0, 0, 0);
 }
 .headerContainer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+.headerLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+
+}
+.headerLogo img{
+    height: 40px;
+}
+.headerNavbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+
+}
+.headerNavList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    color: white;
+    list-style-type: none;
+}
+
+.headerIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    margin-right: -50px;
+    
+}
+.headerIcon img{
+    height: 27px;
+
+}
+
+.headerGandaMarts{
+    margin-right: -70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    width: 230px;
+    color: white;
+    gap: 3rem;
+
+}
+#headerGandaText{
+    background-color: #FF8D69;
+    border-radius: 13px;
+    padding: 4px 10px ;
+}
+#headerGandaSign{
+    background-color: #FF8D69;
+    border-radius: 50px 50px 50px 50px;
+    width: 17px;
+    text-align: center;
+    padding: 4px ;
+}
+.headerHelpCart{
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100px;
+    font-size: .8rem;
+    gap: .8rem;
+}
+.headerHelpCart p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.headerHelpCart img{
+    height: 20px;
+}
+#vudown{
+    height: 7px;
+    margin-left: -13px;
+    margin-top: 5px;
+
 }
