@@ -17,9 +17,12 @@ const Wallet = () => {
   const handleFundWallet = () => {
     setshowFundWallet(true)
     setShowWalletRight2Content(false)
+    
+    
   }
   const handlecashDepositBody = () => {
     setCashDepositBody(true)
+    setShowPayStack(false)
   }
 
   const handlePayStack = () => {
@@ -142,9 +145,86 @@ const Wallet = () => {
 
                   {/* PAYSTACK BODY */}
 {showPayStack && <div className='payStackBody'>
-                  
+                    <div className='payStackHead'>
+                    <p id ='payStackHead'> <img src='/image/headerIcon.png' alt ='' />paystack</p>
+                    </div>
+                    
+                    <div className='payStackInfo'>
 
-                 </div>}
+                      {/* AMOUNT */}
+                      <div className='payStackAmount'>
+                        <p>Amount:  #</p>
+                        <input type='text' name='amount' id='amount'/>
+                      </div>
+
+                      {/* CARD TYPE */}
+                      <div className='payStackCard'>
+                        <p>CARD TYPE</p>
+                        <select>
+                          <option>Verve</option>
+                          <option>Visa</option>
+                          <option>Master Card</option>
+                        </select>
+                      </div>
+
+                      {/* CARD NUMBER */}
+                      <div className='payStackNumber'>
+                        <p>CARD NUMBER</p>
+                          <input type='text' name='cardnumber' id='cardnumber'/>
+                      </div>
+
+                          {/* CVV */}
+                          <div className='payStackCvv'>
+
+                          <div className='expiryDate'>
+                            <p>EXPIRY DATE</p>
+                            <select>
+                              <option id='dashdash'>- -</option>
+                              <option>idk</option>
+                              <option>idk</option>
+                              <option>idk</option>
+                            </select>
+                          </div>
+
+                          <div className='Empty'>
+                          <select>
+                              <option></option>
+                              <option>idk</option>
+                              <option>idk</option>
+                              <option>idk</option>
+                            </select>
+                          </div>
+
+                          <div className='cvv'>
+                            <p>CVV</p>
+                            <input type='text' name='cvv' id='cvv' />
+
+                          </div>
+
+                          </div>
+
+                          {/* CARD PIN */}
+                          <div className='payStackPin'>
+                            <p>CARD PIN</p>
+                            <input type='text' name='cardpin' id='cardpin'/>
+                          </div>
+                    </div>
+                          {/* PAYSTACK FOOT */}
+                            <div className='payStackFoot'>
+                            <p>By clicking Pay, I have agreed to this service's <br/> <span style={{color: 'green'}}>Terms and Conditions</span></p>
+                            <div className='payStackFootBtn'>
+
+                                {/* CANCEL */}
+                                <button  id ='footCancel'> Cancel</button>
+
+                                {/* PAY */}
+                                <button  id ='footPay'>Pay</button>
+                                </div>
+
+                            </div>
+
+
+                  </div>}
 
 
                 </div>
