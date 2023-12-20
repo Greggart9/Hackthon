@@ -1,0 +1,21 @@
+.ProductPage{
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.productContainer{
+    width: 85%;
+    background-color: rgb(95, 94, 94);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.productSecondLeft{
+    
+}
+
